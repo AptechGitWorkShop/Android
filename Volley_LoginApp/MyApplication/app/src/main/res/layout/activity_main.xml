@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rellay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rellay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_below="@id/imageView"
+            >
+
+            <TextView
+                android:id="@+id/tv_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:shadowRadius="16"
+                android:text="Everyone can be a hero"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/tv_donor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+
+                android:shadowRadius="16"
+                android:text="BE A DONOR"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textAlignment="center"
+
+
+                />
+            <LinearLayout
+                android:id="@+id/linlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_donor"
+                android:orientation="vertical"
+
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint=" Email "
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/txtpass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Password"
+
+                            android:textAllCaps="false"
+
+                            android:textSize="25sp"
+                            android:inputType="textPassword"
+                            />
+
+                        <Button
+                            android:id="@+id/button"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="50dp"
+                            android:text="Login "
+                            android:textAllCaps="false"
+
+                            android:paddingLeft="70dp"
+                            android:paddingRight="70dp"
+
+                            android:backgroundTint="@color/black"
+                            android:textSize="35sp"
+
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rellay2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+
+                android:backgroundTint="@color/black"
+
+
+                android:text="Not A member?Register here?"
+
+                android:textSize="12sp"
+                android:textStyle="bold">
+
+
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
